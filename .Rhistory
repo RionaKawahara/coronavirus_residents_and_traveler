@@ -1,0 +1,5 @@
+data1 <- read.table("xa.csv",header = TRUE, sep =",")
+plot(data1$X, data1$Y,xlab="総面積１km^2当たり人口密度",ylab="感染者数",main="総面積１k^2当たり人口密度")
+fm <- lm(Y ~ X, data = data1)
+abline(fm)
+summary(fm)
