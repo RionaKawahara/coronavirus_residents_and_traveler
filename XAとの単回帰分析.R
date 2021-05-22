@@ -1,5 +1,5 @@
 data1 <- read.table("xa.csv",header = TRUE, sep =",")
-plot(data1$X, data1$Y,xlab="ç·é¢ç©ï¼‘km^2å½“ãŸã‚Šäººå£å¯†åº¦",ylab="æ„ŸæŸ“è€…æ•°",main="ç·é¢ç©ï¼‘k^2å½“ãŸã‚Šäººå£å¯†åº¦")
+plot(data1$X, data1$Y,xlab="‘–ÊÏ‚Pkm^2“–‚½‚èlŒû–§“x",ylab="Š´õÒ”",main="‘–ÊÏ‚Pk^2“–‚½‚èlŒû–§“x")
 fm <- lm(Y ~ X, data = data1)
 abline(fm)
 summary(fm)
